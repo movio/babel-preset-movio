@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-movio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Babel preset recommended at Movio",
   "main": "index.js",
   "keywords": [
@@ -48,7 +48,6 @@
     "babel-plugin-transform-property-literals": "^6.3.13",
     "babel-plugin-transform-react-jsx": "^6.4.0",
     "babel-plugin-transform-regenerator": "^6.3.13",
-    "babel-plugin-transform-strict-mode": "^6.3.13",
-    "babel-plugin-undeclared-variables-check": "^6.3.13"
+    "babel-plugin-transform-strict-mode": "^6.3.13"
   }
 }

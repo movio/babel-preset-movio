@@ -33,7 +33,6 @@ module.exports = {
     require("babel-plugin-transform-property-literals"),
     require("babel-plugin-transform-react-jsx"),
     require("babel-plugin-transform-strict-mode"),
-    require("babel-plugin-undeclared-variables-check"),
     [require("babel-plugin-transform-regenerator"), { async: false, asyncGenerators: false }],
   ]
 }
