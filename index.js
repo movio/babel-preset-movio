@@ -1,11 +1,11 @@
 module.exports = {
   plugins: [
     require("babel-plugin-check-es2015-constants"),
+    require("babel-plugin-syntax-async-functions"),
     require("babel-plugin-syntax-class-properties"),
-    require("babel-plugin-syntax-do-expressions"),
     require("babel-plugin-syntax-jsx"),
     require("babel-plugin-syntax-object-rest-spread"),
-    require("babel-plugin-transform-do-expressions"),
+    require("babel-plugin-transform-async-to-generator"),
     require("babel-plugin-transform-es2015-arrow-functions"),
     require("babel-plugin-transform-es2015-block-scoped-functions"),
     require("babel-plugin-transform-es2015-block-scoping"),
@@ -24,13 +24,15 @@ module.exports = {
     require("babel-plugin-transform-es2015-template-literals"),
     require("babel-plugin-transform-es2015-typeof-symbol"),
     require("babel-plugin-transform-es2015-unicode-regex"),
+    require("babel-plugin-transform-exponentiation-operator"),
+    require("babel-plugin-transform-export-extensions"),
     require("babel-plugin-transform-inline-environment-variables"),
     require("babel-plugin-transform-merge-sibling-variables"),
     require("babel-plugin-transform-minify-booleans"),
     require("babel-plugin-transform-object-rest-spread"),
     require("babel-plugin-transform-property-literals"),
     require("babel-plugin-transform-react-jsx"),
+    require("babel-plugin-transform-regenerator"),
     require("babel-plugin-transform-strict-mode"),
-    [require("babel-plugin-transform-regenerator"), { async: false, asyncGenerators: false }],
   ]
-}
+};
