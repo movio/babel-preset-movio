@@ -77,6 +77,8 @@ require("babel-core").transform("code", {
 - [property-literals](http://babeljs.io/docs/plugins/transform-property-literals/)
 - [regenerator](http://babeljs.io/docs/plugins/transform-regenerator/)
 
+- [class-properties](https://babeljs.io/docs/plugins/transform-class-properties/)
+
 **Note** The `regenerator` transform plugin requires either the [Babel Polyfill](http://babeljs.io/docs/usage/polyfill/) or the [regenerator runtime](https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime) to work.
 
 **Recommended plugins for production** (if using React. Not included in preset)

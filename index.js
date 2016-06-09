@@ -34,5 +34,6 @@ module.exports = {
     require("babel-plugin-transform-react-jsx"),
     require("babel-plugin-transform-regenerator"),
     require("babel-plugin-transform-strict-mode"),
+    require("babel-plugin-transform-class-properties"),
   ]
 };

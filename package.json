@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-movio",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Babel preset recommended at Movio",
   "main": "index.js",
   "keywords": [
@@ -21,6 +21,7 @@
     "babel-plugin-syntax-jsx": "^6.8.0",
     "babel-plugin-syntax-object-rest-spread": "^6.8.0",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-class-properties": "^6.9.1",
     "babel-plugin-transform-es2015-arrow-functions": "^6.8.0",
     "babel-plugin-transform-es2015-block-scoped-functions": "^6.8.0",
     "babel-plugin-transform-es2015-block-scoping": "^6.9.0",
