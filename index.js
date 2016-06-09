@@ -5,6 +5,7 @@ module.exports = {
     require("babel-plugin-syntax-class-properties"),
     require("babel-plugin-syntax-jsx"),
     require("babel-plugin-syntax-object-rest-spread"),
+    require("babel-plugin-transform-class-properties"),
     require("babel-plugin-transform-async-to-generator"),
     require("babel-plugin-transform-es2015-arrow-functions"),
     require("babel-plugin-transform-es2015-block-scoped-functions"),
@@ -34,6 +35,5 @@ module.exports = {
     require("babel-plugin-transform-react-jsx"),
     require("babel-plugin-transform-regenerator"),
     require("babel-plugin-transform-strict-mode"),
-    require("babel-plugin-transform-class-properties"),
   ]
 };
