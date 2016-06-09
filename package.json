@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-movio",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Babel preset recommended at Movio",
   "main": "index.js",
   "keywords": [
