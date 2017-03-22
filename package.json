@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-movio",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Babel preset recommended at Movio",
   "main": "index.js",
   "keywords": [
@@ -20,6 +20,6 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-latest": "^6.24.0",
     "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-2": "^6.22.0"
+    "babel-preset-stage-1": "^6.22.0"
   }
 }
