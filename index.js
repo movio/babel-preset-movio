@@ -1,16 +1,16 @@
-import presetES2015 from 'babel-preset-es2015';
-import presetES2016 from 'babel-preset-es2016';
-import presetES2017 from 'babel-preset-es2017';
-import presetReact from 'babel-preset-react';
-import presetFlow from 'babel-preset-flow';
-import transformAsyncGeneratorFunctions from 'babel-plugin-transform-async-generator-functions';
-import transformClassProperties from 'babel-plugin-transform-class-properties';
-import transformExportExtensions from 'babel-plugin-transform-export-extensions';
-import transformFunctionBind from 'babel-plugin-transform-function-bind';
-import transformObjectRestSpread from 'babel-plugin-transform-object-rest-spread';
-import transformRegenerator from 'babel-plugin-transform-regenerator';
+const presetES2015 = require('babel-preset-es2015');
+const presetES2016 = require('babel-preset-es2016');
+const presetES2017 = require('babel-preset-es2017');
+const presetReact = require('babel-preset-react');
+const presetFlow = require('babel-preset-flow');
+const transformAsyncGeneratorFunctions = require('babel-plugin-transform-async-generator-functions');
+const transformClassProperties = require('babel-plugin-transform-class-properties');
+const transformExportExtensions = require('babel-plugin-transform-export-extensions');
+const transformFunctionBind = require('babel-plugin-transform-function-bind');
+const transformObjectRestSpread = require('babel-plugin-transform-object-rest-spread');
+const transformRegenerator = require('babel-plugin-transform-regenerator');
 
-export default function (context, opts = {}) {
+module.exports = function generatePreset(context, opts = {}) {
   return {
     presets: [
       opts.es2015 !== false && [presetES2015.buildPreset, opts.es2015],
@@ -28,4 +28,5 @@ export default function (context, opts = {}) {
       transformRegenerator,
     ],
   };
-}
+};
+
