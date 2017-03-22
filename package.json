@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-movio",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Babel preset recommended at Movio",
   "main": "index.js",
   "keywords": [
@@ -15,20 +15,14 @@
     "url": "git@github.com:movio/babel-preset-movio.git"
   },
   "dependencies": {
-    "babel-plugin-transform-async-generator-functions": "^6.22.0",
-    "babel-plugin-transform-class-properties": "^6.23.0",
     "babel-plugin-transform-export-extensions": "^6.22.0",
-    "babel-plugin-transform-function-bind": "^6.22.0",
-    "babel-plugin-transform-inline-environment-variables": "^0.0.2",
-    "babel-plugin-transform-merge-sibling-variables": "^6.8.2",
-    "babel-plugin-transform-minify-booleans": "^6.8.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-plugin-transform-property-literals": "^6.8.1",
     "babel-plugin-transform-regenerator": "^6.22.0",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-es2016": "^6.22.0",
     "babel-preset-es2017": "^6.22.0",
     "babel-preset-flow": "^6.23.0",
-    "babel-preset-react": "^6.23.0"
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-preset-stage-3": "^6.22.0"
   }
 }
