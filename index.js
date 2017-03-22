@@ -1,39 +1,31 @@
-module.exports = {
-  plugins: [
-    require("babel-plugin-check-es2015-constants"),
-    require("babel-plugin-syntax-async-functions"),
-    require("babel-plugin-syntax-class-properties"),
-    require("babel-plugin-syntax-jsx"),
-    require("babel-plugin-syntax-object-rest-spread"),
-    require("babel-plugin-transform-class-properties"),
-    require("babel-plugin-transform-async-to-generator"),
-    require("babel-plugin-transform-es2015-arrow-functions"),
-    require("babel-plugin-transform-es2015-block-scoped-functions"),
-    require("babel-plugin-transform-es2015-block-scoping"),
-    require("babel-plugin-transform-es2015-classes"),
-    require("babel-plugin-transform-es2015-computed-properties"),
-    require("babel-plugin-transform-es2015-destructuring"),
-    require("babel-plugin-transform-es2015-for-of"),
-    require("babel-plugin-transform-es2015-function-name"),
-    require("babel-plugin-transform-es2015-literals"),
-    require("babel-plugin-transform-es2015-modules-commonjs"),
-    require("babel-plugin-transform-es2015-object-super"),
-    require("babel-plugin-transform-es2015-parameters"),
-    require("babel-plugin-transform-es2015-shorthand-properties"),
-    require("babel-plugin-transform-es2015-spread"),
-    require("babel-plugin-transform-es2015-sticky-regex"),
-    require("babel-plugin-transform-es2015-template-literals"),
-    require("babel-plugin-transform-es2015-typeof-symbol"),
-    require("babel-plugin-transform-es2015-unicode-regex"),
-    require("babel-plugin-transform-exponentiation-operator"),
-    require("babel-plugin-transform-export-extensions"),
-    require("babel-plugin-transform-inline-environment-variables"),
-    require("babel-plugin-transform-merge-sibling-variables"),
-    require("babel-plugin-transform-minify-booleans"),
-    require("babel-plugin-transform-object-rest-spread"),
-    require("babel-plugin-transform-property-literals"),
-    require("babel-plugin-transform-react-jsx"),
-    require("babel-plugin-transform-regenerator"),
-    require("babel-plugin-transform-strict-mode"),
-  ]
-};
+import presetES2015 from 'babel-preset-es2015';
+import presetES2016 from 'babel-preset-es2016';
+import presetES2017 from 'babel-preset-es2017';
+import presetReact from 'babel-preset-react';
+import presetFlow from 'babel-preset-flow';
+import transformAsyncGeneratorFunctions from 'babel-plugin-transform-async-generator-functions';
+import transformClassProperties from 'babel-plugin-transform-class-properties';
+import transformExportExtensions from 'babel-plugin-transform-export-extensions';
+import transformFunctionBind from 'babel-plugin-transform-function-bind';
+import transformObjectRestSpread from 'babel-plugin-transform-object-rest-spread';
+import transformRegenerator from 'babel-plugin-transform-regenerator';
+
+export default function (context, opts = {}) {
+  return {
+    presets: [
+      opts.es2015 !== false && [presetES2015.buildPreset, opts.es2015],
+      opts.es2016 !== false && presetES2016,
+      opts.es2017 !== false && presetES2017,
+      opts.react !== false && presetReact,
+      opts.flow !== false && presetFlow,
+    ],
+    plugins: [
+      transformAsyncGeneratorFunctions,
+      transformClassProperties,
+      transformExportExtensions,
+      transformFunctionBind,
+      transformObjectRestSpread,
+      transformRegenerator,
+    ],
+  };
+}
